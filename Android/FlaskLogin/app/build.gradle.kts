@@ -50,6 +50,22 @@ dependencies {
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
+
+    // Navegación entre pantallas (login, registro, CRUD)
+    implementation(libs.androidx.navigation.compose)
+
+    // ViewModel utilizable directamente desde Composables
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+
+    // Cliente HTTP para consumir la API REST de Flask
+    implementation(libs.retrofit.core)
+    implementation(libs.retrofit.converter.gson)
+    implementation(libs.okhttp.logging.interceptor)
+    implementation(libs.kotlinx.coroutines.android)
+
+    // Almacenamiento local del token de sesión (JWT)
+    implementation(libs.androidx.datastore.preferences)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

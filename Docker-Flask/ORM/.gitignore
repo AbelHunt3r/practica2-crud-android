@@ -1,0 +1,12 @@
+# Secretos / configuración local — nunca se sube al repositorio
+.env
+
+# Base de datos SQLite generada en tiempo de ejecución
+*.db
+instance/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
